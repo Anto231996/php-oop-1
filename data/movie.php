@@ -10,6 +10,10 @@ class Movie{
         $this->title = $title;
         $this->language = $language;
         $this->genre = $genre;
+        $this->setYear($year);
+    }
+
+    function setYear($year){
         if (is_numeric($year)){
             $this->year = $year;
         }
